@@ -75,7 +75,7 @@ public class coding_practice_1_31_2022 {
         */
     }
     public static List<Object> numFilter(ArrayList<Object> List){
-        return List.stream().filter(c-> c.getClass()==Integer.class && (Integer)c>0).collect(Collectors.toList());
+        return List.stream().filter(c-> c.getClass()==Integer.class && (Integer)c>=0).collect(Collectors.toList());
     }
     public static String multiplyBy11(String inputNum){
         StringBuffer result=new StringBuffer();
